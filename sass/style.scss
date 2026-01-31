@@ -1,0 +1,183 @@
+
+body {
+  background-color: #FAFAFA;
+  box-sizing: border-box; // width = content  padding  border 
+  width: 1920px; // 200px | 10em | 5rem | 75%; 
+  height: 1080px;
+  margin: 0px;
+
+  header{
+    display: flex ; // block | inline | inline-block | flex | grid | none | inline-flex | inline-grid | table | etc; 
+    
+    .woman {
+    position: absolute;
+    top: 0;
+    left: 808px;   // posición desde la izquierda
+    width: 1112px; // tamaño fijo de ancho
+    height: auto;  // mantiene proporciones
+    }
+
+    .logo{
+      display: inline-block; // block | inline | inline-block | flex | grid | none | inline-flex | inline-grid | table | etc; 
+      margin: 33px 160px;
+      border: 0px;
+      padding: 0px;
+    }
+
+    nav{
+      display: inline-block; // block | inline | inline-block | flex | grid | none | inline-flex | inline-grid | table | etc; 
+      position: absolute;
+      top: 46px;
+      left: 1261px;
+      width: 469px; // 200px | 10em | 5rem | 75%; 
+      ul {
+        display: flex ; // block | inline | inline-block | flex | grid | none | inline-flex | inline-grid | table | etc; 
+        list-style: none;   // elimina el marcador "•" de la lista 
+        justify-content: space-between; // flex-start | flex-end | center | space-between | space-around | space-evenly;
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+        a {
+          text-decoration: none; // elimina el subrayado 
+          font-family: 'Poppins', sans-serif;
+          font-size: 18px;
+          color: black;
+        }
+        
+      }
+    }
+  }
+}
+main {
+
+  h1 {
+    display: block; // block | inline | inline-block | flex | grid | none | inline-flex | inline-grid | table | etc; 
+    margin: 0px;
+    width: 784px;
+    height: 240px;
+    line-height: 120px;
+    position: absolute;
+    top: 200px;
+    left: 160px;
+    font-size: 120px;
+    font-weight: 400; // 200, 300, normal(400), 500, 600, bold(700), 800, 900 
+    font-family: 'Bebas Neue', sans-serif;
+    color: black;
+    span{
+      color: #7EDAD2;
+    }
+  }
+
+  p {
+    display: block; // block | inline | inline-block | flex | grid | none | inline-flex | inline-grid | table | etc; 
+    margin: 0px;
+    width: 719px;
+    height: 80px;
+    position: absolute;
+    top: 448px;
+    left: 160px;
+    font-size: 24px;
+    font-weight: 400; // 200, 300, normal(400), 500, 600, bold(700), 800, 900 
+    font-family: 'Poppins', sans-serif;
+    color: black;
+  }
+
+  a {
+    display: block; // block | inline | inline-block | flex | grid | none | inline-flex | inline-grid | table | etc; 
+    margin: 0px;
+    width: 180px;
+    height: 60px;
+    position: absolute;
+    top: 568px;
+    left: 160px;
+    font-size: 18px;
+    font-weight: 400; // 200, 300, normal(400), 500, 600, bold(700), 800, 900 
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #7EDAD2;
+    text-decoration: none; // elimina el subrayado 
+    line-height: 60px;  // centra verticalmente 
+    text-align: center; // centra horizontalmente 
+  }
+
+  .stats {
+    display: flex; // block | inline | inline-block | flex | grid | none | inline-flex | inline-grid | table | etc; 
+    justify-content: space-between;
+    position: absolute;
+    top: 684px;
+    left: 160px;
+    width: 491px;
+    height: 85px;
+    div {
+      display: flex; // block | inline | inline-block | flex | grid | none | inline-flex | inline-grid | table | etc; 
+      flex-direction: column;
+      align-items: center;
+      font-size: 48px;
+      line-height: 58px;
+      font-weight: 400; // 200, 300, normal(400), 500, 600, bold(700), 800, 900 
+      font-family: 'Bebas Neue', sans-serif;
+      color: black;
+      width: 160px;
+      height: 58px;
+      span {
+        display: block; // block | inline | inline-block | flex | grid | none | inline-flex | inline-grid | table | etc; 
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 400; // 200, 300, normal(400), 500, 600, bold(700), 800, 900 
+        font-family: 'Poppins', sans-serif;
+        color: black;
+      }
+    }
+  }
+
+  .articles {
+    display: flex; // block | inline | inline-block | flex | grid | none | inline-flex | inline-grid | table | etc; 
+    justify-content: space-between;
+    position: absolute;
+    top: 833px;
+    left: 160px;
+    width: 1600px;
+    height: 234px;
+    article {
+      background-color: #FAFAFA;
+      width: 376px;
+      display: flex; // block | inline | inline-block | flex | grid | none | inline-flex | inline-grid | table | etc; 
+      flex-direction: column;
+      img {
+        width: 64px;
+        height: 64px;
+        margin-left: 36px;
+        margin-top: 36px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+      }
+      h3 {
+        margin-left: 32px;
+        margin-top: 8px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        width: 219px;
+        height: 36px;
+        font-weight: 500; // 200, 300, normal(400), 500, 600, bold(700), 800, 900 
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+      }
+      p {
+        position: static;
+        margin-left: 32px;
+        margin-top: 8px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        width: 300px;
+        height: 54px;
+        font-weight: 400; // 200, 300, normal(400), 500, 600, bold(700), 800, 900 
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+
+
+
